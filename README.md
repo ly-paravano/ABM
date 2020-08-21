@@ -1,4 +1,4 @@
-# Index to my Agent Based Modeling Work
+# Index to GitHub Page
 
 [Data 440 Page](https://ly-paravano.github.io/hello-world/)
 
