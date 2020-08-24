@@ -1,7 +1,3 @@
-# Index to GitHub Pagefdafadfa
+# [Luca Paravano's Data 440: ABM Work](https://ly-paravano.github.io/ABM/)
 
-[Data 440 Page](https://ly-paravano.github.io/ABM/)
-
-# Exercise 1
-[this is the link to my file](Exercise1.md)
-
+#### [Exercise 1: Getting Started with R & R Studio](Exercise1.md)
