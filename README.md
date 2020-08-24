@@ -3,6 +3,12 @@
 [Data 440 Page](https://ly-paravano.github.io/ABM/)
 
 
+# Exercise 1
+![](my.file.png)
+
+
+
+
 # Welcome to GitHub
 
 Welcome to GitHub—where millions of developers work together on software. Ready to get started? Let’s learn how this all works by building and publishing your first GitHub Pages website!
