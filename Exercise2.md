@@ -75,7 +75,7 @@ ggplot() +
 
 ![](images/Ex2plot2.png)
 
-# Challenge Questions Coming Soon!! (Laptop broke)
+# Challenge Questions Coming Soon!! 
 
 
 
