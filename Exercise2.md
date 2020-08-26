@@ -74,8 +74,7 @@ ggplot() +
 ```
 
 ![](images/Ex2plot2.png)
-
-# Challenge Questions Coming Soon!! 
+ 
 
 
 
