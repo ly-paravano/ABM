@@ -1,8 +1,4 @@
-# ExerciseMD
-
-![](images/ChallengeQuestion.png)
-
-### Exercise 1 - Getting Started with R & R Studio
+## Exercise 1 - Getting Started with R & R Studio
 
 **Responsibilities**:
 
