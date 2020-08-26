@@ -13,7 +13,7 @@ x <- 1:10
 y <- 10:1
 ```
 
-Plot relationship between x and y.
+Plot relationship between `x` and `y`.
 
 ```R
 plot(x,y,type='o',
@@ -30,7 +30,7 @@ plot(x,y,type='o',
 
 ![](images/Ex1plot1.png)
 
-Complicate Relationship between x and y, add obstacles, and the indvidual's path.
+Complicate Relationship between `x` and `y`, add obstacles, and the indvidual's path.
 
 ```R
 x<-1:100
@@ -67,7 +67,7 @@ title(main="A Person's path between Homes")
 
 **Challenge Question**
 
-- Increase the minimum and maximum limits of your area from 1 to 1000 in both the x & y dimension.
+- Increase the minimum and maximum limits of your area from 1 to 1000 in both the `x` & `y` dimension.
 - Randomly place 50 dwelling units throughout the 1000 x 1000 dimensioned area. Size each square appropriately.
 - Randomly place 40 small circles (trees) throughout the 1000 x 1000 dimensioned area. Set the radius of each circle to the same or approximately the same as the width of each home.
 - Randomly place 12 large trees throughout the defined area, such that each tree has almost twice the radius as each home's width.
