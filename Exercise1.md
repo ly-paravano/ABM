@@ -69,7 +69,7 @@ title(main="A Person's path between Homes")
 
 ![](images/Ex1plot2.png)
 
-**Challenge Question **
+**Challenge Question**
 
 - Increase the minimum and maximum limits of your area from 1 to 1000 in both the x & y dimension.
 - Randomly place 50 dwelling units throughout the 1000 x 1000 dimensioned area. Size each square appropriately.
