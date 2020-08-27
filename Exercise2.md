@@ -165,7 +165,7 @@ plotbot <-ggplot() +
      theme_void()
    ```
 
-![](images/Ex2plot4.png =1200x1200)
+![](images/Ex2plot4.png =100x20)
 
 
    
