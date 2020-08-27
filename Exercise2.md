@@ -104,7 +104,7 @@ plotbot <-ggplot() +
 
 
 
-![](/Users/lucaparavano/Desktop/DATA440/images/Ex2plot3.png)
+![](images/Ex2plot3.png)
 
 2. Create a composite graphic of Gabon.
 
@@ -165,6 +165,7 @@ plotbot <-ggplot() +
      theme_void()
    ```
 
-   <img src="/Users/lucaparavano/Desktop/DATA440/images/Ex2plot4.png"/>
+![]('images/Ex2plot4.png)
+
 
    
