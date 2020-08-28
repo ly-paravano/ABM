@@ -13,5 +13,12 @@
                color='black',
                size=4)
  ```
+ - Filer & Summarize was not working, every region had the same population which is clearly wrong.
+ ```R
+ totals_adm1 <- pop_vals_adm1 %>%
+  group_by(add_ID_variable_here) %>%
+  summarize(name_of_newly_created_var = sum(add_pop_var_here, na.rm = TRUE))
+  ```
+  
            
            
