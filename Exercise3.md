@@ -28,7 +28,7 @@ plot(gabpop)
 plot(st_geometry(gab_adm1), add=T)
 ```
 
-![](/Users/lucaparavano/Desktop/DATA440/DATA440/images/Ex3plot1.png)
+![](images/Ex3plot1.png)
 
 ### Challenge Questions
 
@@ -52,7 +52,7 @@ ggplot(gab_adm1) +
   scale_fill_gradient(low = "white", high = "red")
 ```
 
-![](/Users/lucaparavano/Desktop/DATA440/DATA440/images/Ex3plot2.png)
+![](images/Ex3plot2.png)
 
 Population density of Gabon's counties.
 
@@ -78,6 +78,6 @@ ggplot()+
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
-![](/Users/lucaparavano/Desktop/DATA440/DATA440/images/Ex3plot3.png)
+![](images/Ex3plot3.png)
 
 
