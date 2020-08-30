@@ -52,6 +52,7 @@ ggplot(gab_adm1) +
   scale_fill_gradient(low = "white", high = "red")
 ```
 
+
 ![](images/Ex3plot2.png)
 
 Population density of Gabon's counties.
