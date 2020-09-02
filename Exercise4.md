@@ -1,4 +1,4 @@
-### Exercise 4 - Creating a Geometric Bar Plot with your Simple Feature object
+### Exercise 4 - Creating a Geometric Bar Plot with your Simple Feature object (NEEDS CLEANING)
 
 **Responsibilities XXX**
 
