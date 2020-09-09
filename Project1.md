@@ -18,4 +18,6 @@
 
 ![](images/Ex5plot6.png)
 
+![](images/Ex5plot7.png)
+
 
