@@ -8,7 +8,7 @@ gganimate helps in furthering a message by adding animation to most standard gra
 
 To demonstrate gganimate's functionality, I will be using the gapminder dataset. Gapminder contains information on a country's life expectancy, population and GDP per capita from 1952-2007.
 
-![](/Users/lucaparavano/Desktop/DATA440/DATA440/DataInsight1/gapmindertable.png)
+![](images/gapmindertable.png)
 
 If we wanted to plot the relationship between GDP per capita and life expectancy we could:
 
