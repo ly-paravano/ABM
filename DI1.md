@@ -53,7 +53,7 @@ animate(p2, nframes=120,
         height=700,width=1000)
 ```
 
-![](/Users/lucaparavano/Desktop/DATA440/DATA440/DataInsight1/PerCapGDP.gif)
+![](images/PerCapGDP.gif)
 
 In my opinion, using gganimate is the clear winner when it comes to cleanly displaying this data.
 
@@ -61,17 +61,17 @@ In my opinion, using gganimate is the clear winner when it comes to cleanly disp
 
 Just to familiarize myself to the package, I went through the student work section of the syllabus and filterred the gapminder dataframe to only inclucde countries that were used for project one. Here is the resulting graphic.
 
-![](/Users/lucaparavano/Desktop/DATA440/DATA440/DataInsight1/SfdafPerCapGDP.gif)
+![](images/SfdafPerCapGDP.gif)
 
 
 
 Additionally, and more importantly, we can potentially use gganimate to better visualize the population counts / distribution of a country from the years 2000 - 2020 as Worldpop.org has that data.
 
-![](/Users/lucaparavano/Desktop/DATA440/DATA440/DataInsight1/worldpop.png)
+![](images/worldpop.png)
 
 An example graph to add year as a variable that might be interesting. (Currently working on it)
 
-![](/Users/lucaparavano/Desktop/DATA440/DATA440/images/Ex3plot3.png)
+![](images/Ex3plot3.png)
 
 
 
