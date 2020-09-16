@@ -6,4 +6,5 @@
 #### [Exercise 4: Creating a Geometric Bar Plot with your Simple Feature object](Exercise4.md)
 
 ### [Project 1](Project1.md)
+### [Data Insights 1](DI.md)
 
