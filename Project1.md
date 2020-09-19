@@ -359,7 +359,7 @@ render_snapshot(title_text = "Woleu, Gabon.",
 * As we can see from the last graphic, the topogrophy of Gabon is quite flat therefore we cannot use the geography of the region as an excuse to explain the underdevelopment of the area.
 * After looking at google maps, the largest settlement in Woleu is in fact a town (Oyem) and the placement population / transportation services must be a direct result of Oyem.
 
-##### Zipfs Law
+##### Zipf's Law
 
 Due to the fact that Oyem only has one legitimate settlement, I would like to apply Zipf's law to the different administrative regions in Gabon.
 
