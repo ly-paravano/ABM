@@ -17,7 +17,7 @@ Javier Fernandez (F.C. Barcelona) and Luke Bornn (Simon Frasier University, Sacr
 
 #### Figure 1: Example of creation and occupation
 
-![](/Users/lucaparavano/Desktop/Screen Shot 2020-10-16 at 6.18.08 PM.png)
+![](images/Screen Shot 2020-10-16 at 6.18.08 PM.png)
 
 This figure represents 3 frames of a play from left to right. 
 
@@ -41,7 +41,7 @@ Additionally, one must also consider the position of the ball when quantifyign t
 
 #### Figure 2: Dynamic Pitch Value
 
-![](/Users/lucaparavano/Desktop/Screen Shot 2020-10-16 at 7.42.45 PM.png)
+![](images/Screen Shot 2020-10-16 at 7.42.45 PM.png)
 
 
 
@@ -55,7 +55,7 @@ After establishing metrics for off the ball movement, Bornn and Fernandez analyz
 
 #### Figure 3: Player Stats
 
-![](/Users/lucaparavano/Desktop/Screen Shot 2020-10-16 at 8.37.48 PM.png)
+![](images/Screen Shot 2020-10-16 at 8.37.48 PM.png)
 
 The figure above displays the in game stats for Barcelona players in a single game.
 
