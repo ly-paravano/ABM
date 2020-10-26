@@ -8,7 +8,7 @@ To start with I had to request my household data from https://dhsprogram.com/. O
 
 In Gabon's 2012 census, field reporters visited 6203 households across Gabon and reported around 17 different questions give or take (1107 columns of data, asked on 48 potential household members).
 
-![](images/ScreenShot2020-10-26at3.49.08AM.png)
+![](images/table.png)
 
 
 
