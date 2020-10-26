@@ -80,7 +80,7 @@ Generally, I wished the gps location (longitude / latitude) was included in the 
 
 Based off of that thinking, I believe that a synthetic population generated at the adm2 level is more accurate to the local population than generating a population at the adm0 level. This is the case as by narrowing our sample to survey results. A great example of this can be seen in the distribution of average household size across Gabon.
 
-![](images/Screen Shot 2020-10-26 at 2.11.17 AM.png)
+![](images/barplot.png)
 
 
 
@@ -94,7 +94,7 @@ Below is the graph of the household distribution using all of Gabon. The generat
 
 *For some reason I was not able to generate a distribution using just the Woleu's (my selected adm1) distribution my computer kept crashing.
 
-![](images/Screen Shot 2020-10-26 at 2.58.45 AM.png)
+![](images/dist.png)
 
 
 
