@@ -230,6 +230,7 @@ As we can see, all three machine learning algorithims were able to beat a random
 
 The RF algorithim was the top performer, but also predicted the most 1s (seen below), which makes me believe that is the highest performing algorithim simply due to the fact that it predicted the most 1s.
 
+#### Figure 4.7: # of 1s predicted
 ![](images/bargraphic.png)
 
 
