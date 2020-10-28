@@ -111,11 +111,11 @@ When sampling from my adm1, I am only have ~ 600 observations to generate an obs
 
 #### Figure 3.2: Realized vs Generated Household Size (ADM0)
 
-![](images/dist1.png)
+![](images/dis2.png)
 
 #### Figure 3.3: Realized vs Generated Household Size (ADM1)
 
-![](images/dis2.png)
+![](images/dist1.png)
 
 
 
