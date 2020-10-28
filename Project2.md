@@ -48,7 +48,7 @@ Next we will explore the age distribution of Gabon.
 
 It should be noted that the DHS household sum of weights before any transformation of the data is not 100% accurate. 
 
-![](/Users/lucaparavano/Desktop/Screen Shot 2020-10-28 at 12.20.40 AM.png)
+![](images/stats.png)
 
 
 
@@ -111,11 +111,11 @@ When sampling from my adm1, I am only have ~ 600 observations to generate an obs
 
 #### Figure 3.2: Realized vs Generated Household Size (ADM0)
 
-![](/Users/lucaparavano/Desktop/Screen Shot 2020-10-27 at 11.51.20 PM.png)
+![](images/dis2.png)
 
 #### Figure 3.3: Realized vs Generated Household Size (ADM1)
 
-![Screen Shot 2020-10-27 at 11.51.07 PM](/Users/lucaparavano/Desktop/Screen Shot 2020-10-27 at 11.51.07 PM.png)
+![](images/dist1.png)
 
 
 
@@ -127,15 +127,15 @@ The population I was able to generate is more accurate than a random population 
 
 #### Figure 4.1: Actual Population Density of Wouleu-Ntem Region (2018)
 
-![](/Users/lucaparavano/Downloads/DATA440 2/ActualPopdisp.png)
+![](images/ActualPopdisp.png)
 
 #### Figure 4.2: Random Population Distribution of Wouleu-Ntem Region
 
-![](/Users/lucaparavano/Downloads/DATA440 2/Randomdispersion.png)
+![](images/Randomdispersion.png)
 
 #### Figure 4.3: Population Distribution I was able to generate of the Wouleu-Ntem Region
 
-![](/Users/lucaparavano/Downloads/DATA440 2/UsingPopDisp.png)
+![](images/UsingPopDisp.png)
 
 As seen above, it is clear that my generated population is far better at representing the population density of the Wouleu-Ntem region than the random distribution. 
 
@@ -208,7 +208,7 @@ def plot_confusion_matrix(cm,
 
 #### Figure 4.4: Random Forrest 
 
-![](/Users/lucaparavano/Desktop/Screen Shot 2020-10-28 at 1.32.36 PM.png)
+![](images/first.png)
 
 
 
@@ -216,11 +216,11 @@ def plot_confusion_matrix(cm,
 
 #### Figure 4.5: Multinomial Linear Regression 
 
-![](/Users/lucaparavano/Desktop/Screen Shot 2020-10-28 at 1.33.37 PM.png)
+![](images/middle.png)
 
 #### Figure 4.6: Ranger
 
-![Screen Shot 2020-10-28 at 1.32.58 PM](/Users/lucaparavano/Desktop/Screen Shot 2020-10-28 at 1.32.58 PM.png)
+![](images/last.png)
 
 
 
@@ -230,6 +230,6 @@ As we can see, all three machine learning algorithims were able to beat a random
 
 The RF algorithim was the top performer, but also predicted the most 1s (seen below), which makes me believe that is the highest performing algorithim simply due to the fact that it predicted the most 1s.
 
-![](/Users/lucaparavano/Desktop/Screen Shot 2020-10-28 at 1.49.29 PM.png)
+![](images/bargraphic.png)
 
 
