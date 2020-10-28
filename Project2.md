@@ -1,54 +1,54 @@
-- ## Project 2 - Generating Synthetic Populations
+## Project 2 - Generating Synthetic Populations
 
-  
 
-  ### Provide a written description of your selected household survey including the number of household and person observations as well as the variables in your source data.
 
-  To start with I had to request my household data from https://dhsprogram.com/. Once approved, I had access to both Gabon's 2012 and 2000 census, I chose to use the data from 2012 as it was the most up to date. 
+### Provide a written description of your selected household survey including the number of household and person observations as well as the variables in your source data.
 
-  In Gabon's 2012 census, field reporters visited 6203 households across Gabon and reported around 17 different questions give or take (1107 columns of data, asked on 48 potential household members).
+To start with I had to request my household data from https://dhsprogram.com/. Once approved, I had access to both Gabon's 2012 and 2000 census, I chose to use the data from 2012 as it was the most up to date. 
 
-  ![](images/table.png)
+In Gabon's 2012 census, field reporters visited 6203 households across Gabon and reported around 17 different questions give or take (1107 columns of data, asked on 48 potential household members).
 
-  
+![](images/table.png)
 
-  
 
-  Variables used for this project:
 
-  * Household ID : hhid
-  * Unit: hv004
-  * Weight: hv005
-  * Location: shprov
-  * Gender: hv105_X
-  * Age: hv104_X
-  * Education (Still in school): hv111_X
 
-  The overall distribution of household size can be seen below
 
-  ![](images/proj2im1.png)
+Variables used for this project:
 
-  * We can see a far right skew, which makes sense as the average household size is 5.22, and houses cannot have a negative value meaning the distribution must spread out right.
-  * Quantile Distribution
-    * 0% - 1 
-    * 25% - 2
-    * 50% - 4
-    * 75% - 7
-    * 100% - 48
+* Household ID : hhid
+* Unit: hv004
+* Weight: hv005
+* Location: shprov
+* Gender: hv105_X
+* Age: hv104_X
+* Education (Still in school): hv108_X
 
-  
+The overall distribution of household size can be seen below
 
-  Next we will explore the age distribution of Gabon.
+![](images/proj2im1.png)
 
-  ![](images/proj2im2.png)
+* We can see a far right skew, which makes sense as the average household size is 5.22, and houses cannot have a negative value meaning the distribution must spread out right.
+* Quantile Distribution
+  * 0% - 1 
+  * 25% - 2
+  * 50% - 4
+  * 75% - 7
+  * 100% - 48
 
-  
 
-  * From this graphic we can see that a majority of Gabon's population, this might be a result of a baby boom in the last 30 years AND / OR, a very short life expectancy in comparison to first world countries. I would be very interested to see the age distribution of neighboring countries to see if this distribution is isolated to Gabon or not.
+
+Next we will explore the age distribution of Gabon.
+
+![](images/proj2im2.png)
+
+
+
+* From this graphic we can see that a majority of Gabon's population, this might be a result of a baby boom in the last 30 years AND / OR, a very short life expectancy in comparison to first world countries. I would be very interested to see the age distribution of neighboring countries to see if this distribution is isolated to Gabon or not.
 
 It should be noted that the DHS household sum of weights before any transformation of the data is not 100% accurate. 
 
-![](images/stats.png)
+![](/Users/lucaparavano/Desktop/Screen Shot 2020-10-28 at 12.20.40 AM.png)
 
 
 
@@ -111,18 +111,125 @@ When sampling from my adm1, I am only have ~ 600 observations to generate an obs
 
 #### Figure 3.2: Realized vs Generated Household Size (ADM0)
 
-![](images/dis2.png)
+![](/Users/lucaparavano/Desktop/Screen Shot 2020-10-27 at 11.51.20 PM.png)
 
 #### Figure 3.3: Realized vs Generated Household Size (ADM1)
 
-![](images/dist1.png)
+![Screen Shot 2020-10-27 at 11.51.07 PM](/Users/lucaparavano/Desktop/Screen Shot 2020-10-27 at 11.51.07 PM.png)
 
 
 
 Due to the fact that the Woleu-Ntem size distribution folllows the national average so similarly that we have no arguement for not to use ADM0 data to generate our synthetic population.
 
+### When compared to a randomly generated synthetic population that describes the demographic attributes of households and persons, does yours more closely approximate reality? How is yours an improvement over a synthetic population that was generated in accordance with complete spatial randomness? Generate plots and incorporate results from your work as evidence in support of an argument that the synthetic population you generated is a good approximation of the reality that existed in your selected location at that given time.
+
+The population I was able to generate is more accurate than a random population as my population better represents density population in the Wouleu-Ntem region. 
+
+#### Figure 4.1: Actual Population Density of Wouleu-Ntem Region (2018)
+
+![](/Users/lucaparavano/Downloads/DATA440 2/ActualPopdisp.png)
+
+#### Figure 4.2: Random Population Distribution of Wouleu-Ntem Region
+
+![](/Users/lucaparavano/Downloads/DATA440 2/Randomdispersion.png)
+
+#### Figure 4.3: Population Distribution I was able to generate of the Wouleu-Ntem Region
+
+![](/Users/lucaparavano/Downloads/DATA440 2/UsingPopDisp.png)
+
+As seen above, it is clear that my generated population is far better at representing the population density of the Wouleu-Ntem region than the random distribution. 
+
+```R
+hhs_adm1_pts <-rpoint(wol_hhs_n, f=as.im(wol_pop18), win=win)
+```
+
+I was able to capture the variation by using my raster file as a template to adjust how random the random point function is.
 
 
-#### When compared to a randomly generated synthetic population that describes the demographic attributes of households and persons, does yours more closely approximate reality? How is yours an improvement over a synthetic population that was generated in accordance with complete spatial randomness? Generate plots and incorporate results from your work as evidence in support of an argument that the synthetic population you generated is a good approximation of the reality that existed in your selected location at that given time.
 
-will finish tomorrow
+
+
+Additionally, I attempted to see if my synthetic population would be able to predict if individuals were still in school or not. Since I'm working with classifications models I thought it would be fun to use a confusion matrix graphic to summarize how effective models were instead of the plots we did in class.
+
+
+
+How I generated my confusion matrix plots:
+
+```python	
+import numpy as np
+
+
+def plot_confusion_matrix(cm,
+                          target_names,
+                          title='Confusion matrix',
+                          cmap=None,
+                          normalize=True):    
+    import matplotlib.pyplot as plt
+    import numpy as np
+    import itertools
+
+    accuracy = np.trace(cm) / float(np.sum(cm))
+    misclass = 1 - accuracy
+
+    if cmap is None:
+        cmap = plt.get_cmap('Blues')
+
+    plt.figure(figsize=(13, 13))
+    plt.imshow(cm, interpolation='nearest', cmap=cmap)
+    plt.title(title)
+    plt.colorbar()
+
+    if target_names is not None:
+        tick_marks = np.arange(len(target_names))
+        plt.xticks(tick_marks, target_names, rotation=45)
+        plt.yticks(tick_marks, target_names)
+
+    if normalize:
+        cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+
+
+    thresh = cm.max() / 1.5 if normalize else cm.max() / 2
+    for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
+        if normalize:
+            plt.text(j, i, "{:0.4f}".format(cm[i, j]),
+                     horizontalalignment="center",
+                     color="white" if cm[i, j] > thresh else "black")
+        else:
+            plt.text(j, i, "{:,}".format(cm[i, j]),
+                     horizontalalignment="center",
+                     color="white" if cm[i, j] > thresh else "black")
+
+
+    plt.tight_layout()
+    plt.ylabel('True label')
+    plt.xlabel('Predicted label\naccuracy={:0.4f}; misclass={:0.4f}'.format(accuracy, misclass))
+    plt.show()
+```
+
+#### Figure 4.4: Random Forrest 
+
+![](/Users/lucaparavano/Desktop/Screen Shot 2020-10-28 at 1.32.36 PM.png)
+
+
+
+
+
+#### Figure 4.5: Multinomial Linear Regression 
+
+![](/Users/lucaparavano/Desktop/Screen Shot 2020-10-28 at 1.33.37 PM.png)
+
+#### Figure 4.6: Ranger
+
+![Screen Shot 2020-10-28 at 1.32.58 PM](/Users/lucaparavano/Desktop/Screen Shot 2020-10-28 at 1.32.58 PM.png)
+
+
+
+As we can see, all three machine learning algorithims were able to beat a random distributon as they all had an accuracy over 50%. However, it is also very clear that all three algorithims are labelling almost every observation as a 1 (Individual is in school). This is problematic as we get nothing from an algorithim that predicts the same value regardless of input. 
+
+
+
+The RF algorithim was the top performer, but also predicted the most 1s (seen below), which makes me believe that is the highest performing algorithim simply due to the fact that it predicted the most 1s.
+
+![](/Users/lucaparavano/Desktop/Screen Shot 2020-10-28 at 1.49.29 PM.png)
+
+
