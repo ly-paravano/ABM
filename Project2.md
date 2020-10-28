@@ -48,7 +48,7 @@
 
 It should be noted that the DHS household sum of weights before any transformation of the data is not 100% accurate. 
 
-![](/Users/lucaparavano/Desktop/Screen Shot 2020-10-28 at 12.20.40 AM.png)
+![](images/stats.png)
 
 
 
@@ -111,11 +111,11 @@ When sampling from my adm1, I am only have ~ 600 observations to generate an obs
 
 #### Figure 3.2: Realized vs Generated Household Size (ADM0)
 
-![](/Users/lucaparavano/Desktop/Screen Shot 2020-10-27 at 11.51.20 PM.png)
+![](images/dist1.png)
 
 #### Figure 3.3: Realized vs Generated Household Size (ADM1)
 
-![Screen Shot 2020-10-27 at 11.51.07 PM](/Users/lucaparavano/Desktop/Screen Shot 2020-10-27 at 11.51.07 PM.png)
+![](images/dis2.png)
 
 
 
