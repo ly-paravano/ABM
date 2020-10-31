@@ -10,7 +10,7 @@ Before we introduce any model we need to understand if our data contains any **a
 
 Autocorellation is the similarity between observations as a function of the time lag between them.
 
-![](/Users/lucaparavano/Desktop/Screen Shot 2020-10-31 at 8.01.52 AM.png)
+![](images/autocol.png)
 
 Above is an example of an autocorrelation plot. The first value and the 24th value have a high autocorrelation. Similarly, the 12th and 36th observations are highly correlated. This means that we will find a very similar value at every 24 unit of time.
 
@@ -20,7 +20,7 @@ Above is an example of an autocorrelation plot. The first value and the 24th val
 
 Seasonality refers to periodic fluctuations. For example, electricity consumption is high during the day and low during night, or the increase in flu shots duirng the last quarter of the year.
 
-![](/Users/lucaparavano/Desktop/Screen Shot 2020-10-31 at 8.02.03 AM.png)
+![](images/season)
 
 * Stationary
 
@@ -69,7 +69,7 @@ Exponential smoothing uses a similar logic to moving average, but this time, a d
 
 Mathematically, exponential smoothing is expressed as:
 
-![](/Users/lucaparavano/Desktop/Screen Shot 2020-10-31 at 8.21.43 AM.png)
+![](images/formula.png)
 
 
 
@@ -96,7 +96,7 @@ DAY 4 = DAY3pred + SmoothingCoeff(DAY3actual - DAY3pred)
 
 The higher the value of alpha the more sensitive our forecast is to variations in the trend. As we can see below:
 
-![](/Users/lucaparavano/Desktop/Screen Shot 2020-10-31 at 9.13.00 AM.png)
+![](images/expograph.png)
 
 The alpha of .3 follows the slope of the realized data almost perfectly, whilst the forecast with a smoothing coeffecient of .05 barely captures any of the variation. 
 
