@@ -9,5 +9,5 @@
 ### [Data Insights 1](DI1.md)
 ### [Data Insights 2 ](DS2.md)
 ### [Project 2](Project2.md)
-
+### [Data Insights 3](DS3.md)
 
