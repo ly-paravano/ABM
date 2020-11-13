@@ -11,3 +11,5 @@
 ### [Project 2](Project2.md)
 ### [Data Insights 3](DS3.md)
 
+### [Data Insights 4](DI4.md)
+
