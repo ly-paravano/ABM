@@ -18,7 +18,7 @@ We started by looking at 7 boroughs:
 
 #### Figure 1.1: Distance matrix for selected 7 boroughs
 
-![Screen Shot 2020-11-23 at 4.35.14 PM](images/Screen Shot 2020-11-23 at 4.35.14 PM.png)
+![](images/odmatrix.png)
 
 #### Figure 1.2: Observed Migration Matrix
 
@@ -32,7 +32,7 @@ With the above information we were able to create migration graphics. Thicker li
 
 #### Figure 1.4: Migration Graphic of London boroughs transposed on google maps.
 
-![Screen Shot 2020-11-23 at 4.39.24 PM](images/Screen Shot 2020-11-23 at 4.39.24 PM.png)
+![](images/maps.png)
 
 
 
@@ -86,7 +86,7 @@ Which ended up bettering our model. As we returned a r^2 of 0.6720501 and a RMSE
 
   #### Figure 2.1: Final OD Matrix
 
-  ![](images/Screen Shot 2020-11-24 at 3.08.38 PM.png) 
+  ![](images/finaldf.png) 
 
   * Origin - Origin administrative region
   * Destination - Destination administrative region
