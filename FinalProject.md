@@ -86,7 +86,7 @@ Which ended up bettering our model. As we returned a r^2 of 0.6720501 and a RMSE
 
   #### Figure 2.1: Final OD Matrix
 
-  ![Screen Shot 2020-11-24 at 11.20.13 AM](images/Screen Shot 2020-11-24 at 11.20.13 AM.png)
+  ![Screen Shot 2020-11-24 at 11.20.13 AM](images/Screen Shot 2020-11-24 at 3.08.38 PM.png)
 
   * Origin - Origin administrative region
   * Destination - Destination administrative region
