@@ -18,37 +18,37 @@ We started by looking at 7 boroughs:
 
 #### Figure 1.1: Distance matrix for selected 7 boroughs
 
-![Screen Shot 2020-11-23 at 4.35.14 PM](/Users/lucaparavano/Library/Application Support/typora-user-images/Screen Shot 2020-11-23 at 4.35.14 PM.png)
+![Screen Shot 2020-11-23 at 4.35.14 PM](images/Screen Shot 2020-11-23 at 4.35.14 PM.png)
 
 #### Figure 1.2: Observed Migration Matrix
 
-![](/Users/lucaparavano/Desktop/DATA440/photos/TrueODMatrix.png)
+![](images/TrueODMatrix.png)
 
 With the above information we were able to create migration graphics. Thicker lines indicate more migration between the two boroughs. As we can see in Figure 1.3 and Figure 1.4, distance between boroughs does not seem to affect migration.
 
 #### Figure 1.3: Migration Graphic of London boroughs
 
-![](/Users/lucaparavano/Desktop/DATA440/photos/VornoiLondon.png)
+![](images/VornoiLondon.png)
 
 #### Figure 1.4: Migration Graphic of London boroughs transposed on google maps.
 
-![Screen Shot 2020-11-23 at 4.39.24 PM](/Users/lucaparavano/Library/Application Support/typora-user-images/Screen Shot 2020-11-23 at 4.39.24 PM.png)
+![Screen Shot 2020-11-23 at 4.39.24 PM](images/Screen Shot 2020-11-23 at 4.39.24 PM.png)
 
 
 
 #### Figure 1.5: Distance between boroughs X Total Migration between buroughs
 
-![](/Users/lucaparavano/Desktop/DATA440/photos/scatterdisttotal.png)
+![](images/scatterdisttotal.png)
 
 As we can see from Figure 1.5, without manipulating our data there does not really seem to be any strong relationship between distance and total migration. This may result in a weak gravity model, since our model is a function of size of boroughs and distance between boroughs.
 
 #### Figure 1.6: Gravity Model Predicted Migration Patterns
 
-![](/Users/lucaparavano/Desktop/DATA440/photos/GM1ODMatrix.png)
+![](images/GM1ODMatrix.png)
 
 #### Figure 1.7: Observerd Migration Patterns X Gravity Model Predicted Migration Patters 
 
-![](/Users/lucaparavano/Desktop/DATA440/photos/GM1Scatter.png)
+![](images/GM1Scatter.png)
 
 This gravity model returned an r^2 of .5056237 and a RMSE of 2502.24 which is not terrible but could definitely be improved.
 
@@ -56,7 +56,7 @@ I attempted to get a better model by taking the transforming the distance and si
 
 #### Figure 1.8: Log Distance X Log Total
 
-![](/Users/lucaparavano/Desktop/DATA440/photos/logscatter.png)
+![](images/logscatter.png)
 
 From there, I imported data on borough population and average salaries to better our constant variables in our gravity model. 
 
@@ -74,11 +74,11 @@ Which ended up bettering our model. As we returned a r^2 of 0.6720501 and a RMSE
 
 #### Figure 1.9: Improved Gravity Model Predicted Matrix
 
-![](/Users/lucaparavano/Desktop/DATA440/photos/GM2ODMatrix.png)
+![](images/GM2ODMatrix.png)
 
 #### Figure 1.10: Improved Gravity Model Predictions X Observed Migration Patterns
 
-![](/Users/lucaparavano/Desktop/DATA440/photos/GM2scatter.png)
+![](images/GM2scatter.png)
 
 ### Animation of Woleu Ntem Province
 
@@ -86,7 +86,7 @@ Which ended up bettering our model. As we returned a r^2 of 0.6720501 and a RMSE
 
   #### Figure 2.1: Final OD Matrix
 
-  ![Screen Shot 2020-11-24 at 11.20.13 AM](/Users/lucaparavano/Library/Application Support/typora-user-images/Screen Shot 2020-11-24 at 11.20.13 AM.png)
+  ![Screen Shot 2020-11-24 at 11.20.13 AM](images/Screen Shot 2020-11-24 at 11.20.13 AM.png)
 
   * Origin - Origin administrative region
   * Destination - Destination administrative region
@@ -101,7 +101,7 @@ Which ended up bettering our model. As we returned a r^2 of 0.6720501 and a RMSE
 
 #### Figure 2.2: Relationship between log(distance) and log(migration) for Gabon.
 
-![](/Users/lucaparavano/Desktop/DATA440/photos/MyAdminrelat.png)
+![](images/MyAdminrelat.png)
 
 
 
@@ -109,7 +109,7 @@ Which ended up bettering our model. As we returned a r^2 of 0.6720501 and a RMSE
 
 #### Figure 2.3: Animation
 
-![](/Users/lucaparavano/Desktop/DATA440 2/tests.gif)
+![](images/tests.gif)
 
 *How would you modify the number of points departing from each origin?*
 
@@ -138,7 +138,7 @@ mk_voronoi_adm2 <- mk_voronoi %>% st_intersection(WL)
 
 #### Figure 3.1: Voronoi Polygon
 
-![](/Users/lucaparavano/Desktop/DATA440/photos/VoronoiObject.png)
+![](images/VoronoiObject.png)
 
 Now that I have 6 Settlements with their own quasi borders and capitals, it is possible to create a higher resolution gravity model of just this region of Gabon. 
 
@@ -156,7 +156,7 @@ The time variable in our current graphic is linear in nature. Since we do not ha
 
 #### Figure 3.2: Speed of Points During Migration
 
-![](/Users/lucaparavano/Desktop/DATA440/photos/quad.png)
+![](images/quad.png)
 
 Additionally, points on the current graphic arrive at their destination location at the same time no matter the distance between origin and destination. I would prefer to find a method that demonstrates that it takes less time for a point to travel to a closer location than a farther one.
 
