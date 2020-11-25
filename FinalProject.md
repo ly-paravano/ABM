@@ -90,13 +90,13 @@ Which ended up bettering our model. As we returned a r^2 of 0.6720501 and a RMSE
   * Origin - Origin administrative region
   * Destination - Destination administrative region
   * Distance - Distance between origin and destination administrative region in meters.
-  * OriginNTL - Nighttime lights in origin administrative region
-  * DestinationNTL - Nighttime lights in destination administrative region
+  * OriginNTL - Night-time lights in origin administrative region
+  * DestinationNTL - Night-time lights in destination administrative region
   * Migration - Individuals who chose to migrate from origin to destination administrative regions
 
 * Describe your OD matrix and how it is used to model migration across the administrative subdivisions that comprise your selected location.
 
-  My OD matrix uses distance and nighttime lights to predict migration between administrative regions. As we saw in Figure 1.8, log(distance) has an inverse relationship to log(migration) and we can assume that individuals who want to migrate to areas with more nighttime lights.
+  My OD matrix uses distance and night-time lights to predict migration between administrative regions. As we saw in Figure 1.8, log(distance) has an inverse relationship to log(migration) and we can assume that individuals who want to migrate to areas with more night-time lights.
 
 #### Figure 2.2: Relationship between log(distance) and log(migration) for Gabon.
 
