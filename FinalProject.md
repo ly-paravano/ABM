@@ -24,8 +24,7 @@ We started by looking at 7 boroughs:
 
 ![](images/TrueODMatrix.png)
 
-With the above information we were able to create migration graphics. Thicker lines indicate more migration between the two boroughs. As we can see in Figure 1.3 and Figure 1.4, distance between boroughs does not seem to affect migration.
-
+With the above information we were able to create migration graphics. Thicker lines indicate more migration between the two boroughs. 
 #### Figure 1.3: Migration Graphic of London boroughs
 
 ![](images/VornoiLondon.png)
